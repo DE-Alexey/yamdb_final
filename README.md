@@ -1,6 +1,5 @@
 # api_yamdb
-![example workflow](https://github.com/DE-Alexey/yamdb_final
-/actions/workflows/yamdb_workflow.yml/badge.svg)
+![workflow](https://github.com/DE-Alexey/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 ## Описание
 В данном проекте реализовано приложение Review и API для всех его моделей. Пользователям предоставляется возможность оставлять отзывы на различные произведения, присутствующие на ресурсе. А также комментировать отзывы других пользователей.
 Реализована аутентификация по токен TokenAuthentication по email. Аутентифицированный пользователь авторизован на изменение и удаление своего контента; в остальных случаях доступ предоставляется только для чтения.
