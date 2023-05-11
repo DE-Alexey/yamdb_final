@@ -47,7 +47,21 @@ docker-compose exec web python manage.py createsuperuser
 ```
 docker-compose exec web python manage.py collectstatic --no-input
 ```
-Проект запущен и доступен по адресу: [localhost](http://localhost/admin/)
+
+7. Теперь проекту доступна статика. В админке Django (http://158.160.102.110/admin)
+доступно управление данными. 
+
+8. Для создания нового суперпользователя можно выполнить команду:
+```
+$ python manage.py createsuperuser
+```
+и далее указать: 
+```
+Email:
+Username:
+Password:
+Password (again):
+```
 
 ## Загрузка тестовых значений в БД
 
@@ -60,6 +74,7 @@ docker cp <DATA BASE> <CONTAINER ID>:/app/<DATA BASE>
 docker container exec -it <CONTAINER ID> bash
 python manage.py loaddata <DATA BASE>
 ```
+
   
 
 
